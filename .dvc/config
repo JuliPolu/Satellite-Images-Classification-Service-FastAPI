@@ -1,0 +1,8 @@
+[core]
+    no_scm = True
+    remote = my_remote
+[cache]
+    type = "hardlink,symlink"
+['remote "my_remote"']
+    url = ssh://91.206.15.25/home/j.polushina/dvc_files
+    user = j.polushina
