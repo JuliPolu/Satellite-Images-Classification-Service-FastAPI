@@ -12,6 +12,7 @@ RUN apt-get update && \
     libsm6 \
     libxext6
 
+RUN apt-get update && apt-get install -y libncurses5 && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /satellite_service
 

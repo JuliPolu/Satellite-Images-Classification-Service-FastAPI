@@ -85,7 +85,6 @@ install_c_libs:
 .PHONY: docker_run
 docker_run:
 	docker run \
-
 		-d \
 		-p $(LOCAL_PORT):5000 \
 		--name  $(CONTAINER_NAME) \
