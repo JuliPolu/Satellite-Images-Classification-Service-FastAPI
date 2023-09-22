@@ -67,7 +67,8 @@ destroy:
 install_dvc:
 	pip install 'pygit2==1.10.1' 
 	pip install 'pathspec==0.9.0'
-	pip install 'dvc == 3.15.3'
+	pip install 'dvc==3.15.3'
+	pip install 'dvc[ssh]==2.12.1'
 
 
 .PHONY: init_dvc
