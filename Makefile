@@ -73,9 +73,9 @@ install_dvc:
 
 .PHONY: init_dvc
 init_dvc:
-	dvc remote add --default $(DVC_REMOTE_NAME) ssh://91.206.15.25/home/$(USERNAME)/dvc_files
-	dvc remote modify $(DVC_REMOTE_NAME) user $(USERNAME)
-	dvc config cache.type hardlink,symlink
+	dvc remote add --default --force $(DVC_REMOTE_NAME) ssh://91.206.15.25/home/$(USERNAME)/dvc_files
+	dvc remote modify --force $(DVC_REMOTE_NAME) user $(USERNAME)
+	dvc config --force cache.type hardlink,symlink
 
 .PHONY: install_c_libs
 install_c_libs:
