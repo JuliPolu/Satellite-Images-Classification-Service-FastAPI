@@ -1,8 +1,6 @@
-from typing import Optional
-
 import uvicorn
 from fastapi import FastAPI
-from omegaconf import OmegaConf, DictConfig
+from omegaconf import OmegaConf
 
 from src.containers.containers import AppContainer
 from src.routes.routers import router as app_router
@@ -23,4 +21,4 @@ def set_routers(app: FastAPI):
 
 if __name__ == '__main__':
     app = create_app()
-    uvicorn.run(app, port=8080, host='0.0.0.0')
+    uvicorn.run(app, port=5000, host='0.0.0.0')

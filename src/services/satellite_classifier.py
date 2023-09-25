@@ -13,10 +13,11 @@ class SatelliteClassifier:
         self._device = config['device']
 
         self._model: torch.nn.Module = torch.jit.load(self._model_path, map_location=self._device)
-        self._classes: np.ndarray = np.array(config['model_classes'])
-        self._size: tp.Tuple[int, int] = int(config['model_input_size'])
-        threshold = config['threshold']
-        self._thresholds: np.ndarray = np.array([threshold for _ in range(config['num_classes'])])
+        self._classes: np.ndarray = np.array(self._model.classes)
+        self._size: int = self._model.size
+        threshold = self._model.threshold
+        num_classes = len(self._classes)
+        self._thresholds: np.ndarray = np.array([threshold for _ in range(num_classes)])
 
     @property
     def classes(self) -> tp.List:

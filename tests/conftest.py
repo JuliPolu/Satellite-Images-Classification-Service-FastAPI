@@ -15,11 +15,8 @@ TESTS_DIR = os.path.dirname(__file__)
 
 @pytest.fixture(scope='session')
 def sample_image_bytes():
-    f = open(os.path.join(TESTS_DIR, 'images', 'test_10.jpg'), 'rb')  # noqa: WPS515
-    try:
+    with open(os.path.join(TESTS_DIR, 'images', 'test_10.jpg'), 'rb') as f:
         yield f.read()
-    finally:
-        f.close()
 
 
 @pytest.fixture

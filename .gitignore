@@ -47,3 +47,6 @@ htmlcov
 *.pth
 .dvc/tmp/
 .dvc/cache
+
+# support files
+config/config_copy.yml

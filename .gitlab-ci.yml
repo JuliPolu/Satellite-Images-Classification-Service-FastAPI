@@ -61,7 +61,6 @@ lint:
     <<: *docker_common
     script:
       - *docker_login
-      - docker pull ${DOCKER_IMAGE}:${DOCKER_TAG}
       - docker run ${DOCKER_IMAGE}:${DOCKER_TAG} bash -c 'make lint'
     needs:
       - build_image
@@ -71,7 +70,6 @@ unit_tests:
     <<: *docker_common
     script:
       - *docker_login
-      - docker pull ${DOCKER_IMAGE}:${DOCKER_TAG}
       - docker run ${DOCKER_IMAGE}:${DOCKER_TAG} bash -c 'make run_unit_tests'
     needs:
       - build_image

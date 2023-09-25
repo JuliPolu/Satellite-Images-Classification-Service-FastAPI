@@ -1,25 +1,5 @@
 services:
   satellite_classifier:
-    model_path: 'weights/final_model.pt'
+    model_path: 'weights/final_model2.pt'
     device: 'cpu'
-    model_classes: ['artisinal_mine', 
-                    'selective_logging', 
-                    'haze',
-                    'slash_burn',
-                    'clear',
-                    'partly_cloudy',
-                    'blow_down',
-                    'bare_ground',
-                    'water',
-                    'habitation',
-                    'road',
-                    'conventional_mine',
-                    'cultivation',
-                    'primary',
-                    'agriculture',
-                    'blooming',
-                    'cloudy', ]
-    threshold: 0.2
-    num_classes: 17
-    model_input_size: 224
 

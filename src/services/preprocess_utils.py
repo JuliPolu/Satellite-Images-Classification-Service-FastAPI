@@ -4,10 +4,8 @@ from albumentations.pytorch import ToTensorV2
 
 import numpy as np
 
-import typing as tp
 
-
-def preprocess_image(image: np.ndarray, target_image_size: tp.Tuple[int, int]) -> torch.Tensor:
+def preprocess_image(image: np.ndarray, target_image_size: int) -> torch.Tensor:
     """Препроцессинг имаджнетом.
 
     :param image: RGB-изображение;

@@ -6,7 +6,7 @@ from src.services.satellite_classifier import SatelliteClassifier
 class AppContainer(containers.DeclarativeContainer):
     config = providers.Configuration()
 
-    satellite_classifier = providers.Factory(
+    satellite_classifier = providers.Singleton(
         SatelliteClassifier,
         config=config.services.satellite_classifier,
     )

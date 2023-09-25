@@ -1,6 +1,6 @@
 services:
   satellite_classifier:
-    model_path: 'weights/final_model.pt'
+    model_path: 'weights/final_model2.pt'
     device: 'cpu'
     model_classes: ['artisinal_mine', 
                     'selective_logging', 
