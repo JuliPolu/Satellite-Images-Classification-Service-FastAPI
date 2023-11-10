@@ -1,4 +1,6 @@
-### Ссылка на сервис
+#FastAPI Application for Satelite Images classification (Pet Project)
+
+### Ссылка на сервис (временная)
 
 [Ссылка](http://91.206.15.25:1667/docs)
 
@@ -51,7 +53,6 @@ make run_app
 
 
 ### Где искать докер-образы сервиса и как сбилдить свежий образ
-
 
 `registry.deepschool.ru/cvr-aug23/j.polushina/hw-01-service`
 
