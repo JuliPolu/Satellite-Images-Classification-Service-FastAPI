@@ -1,8 +1,17 @@
-#FastAPI Application for Satelite Images classification (Pet Project)
+# FastAPI Application for Satelite Images classification (Pet Project)
+
+FastAPI Сервис по мультилейбл классификации космических снимков.
+Данный репозиторий подготовлен в рамках 1-й проектной работы курса 'CV-Rocket' от команды Deepschool, часть по созданию сервиса в парадигме GitLab CI/CD.
+
+
+## Используемый стэк
+
+FastAPI, Pytorch, albumentations, pydantic, pytest, wemake(flake8), OpenCV, omegaconf, dvc, ansible, Docker
+
 
 ### Ссылка на сервис (временная)
 
-[Ссылка](http://91.206.15.25:1667/docs)
+[Временная Ссылка](http://91.206.15.25:1667/docs)
 
 
 ### Описание API, примеры запросов
